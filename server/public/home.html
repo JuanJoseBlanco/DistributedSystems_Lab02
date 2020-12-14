@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="file">
+            <div class="fields">
+                <label for="">Upload File</label>
+                <input id="select" type="file" ref="file" @change="onSelect">
+            </div>
+            <div class="fields">
+                <button id="send" v-on:click="onSubmit">Submit</button>
+            </div>
+            <div id="image">
+                <img v-bind:src="message" alt="">
+            </div>
+            <div>
+                <a id="link" v-bind:href="link">Vamonos</a>
+            </div>
+            <div></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
